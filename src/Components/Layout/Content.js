@@ -2,5 +2,5 @@ import React from 'react';
 
 export default props => 
   <div>
-    Header
+    this is the main section
   </div>
