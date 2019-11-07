@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
-import Content from './Components/Layout/Content';
+import Content from './Components/Excercises/Content';
+import { muscles, exercises } from './store';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
+export default class extends Component {
+  states = {
+    exercises
+  }
 
-      <Content />
-
-      <Footer />  
-    </div>
-  );
+  render() {
+    return (
+      <Fragment>
+        <Header />
+  
+        <Content />
+  
+        <Footer
+          muscles={muscles}
+        />  
+      </Fragment>
+    );
+  }
 }
-
-export default App;
