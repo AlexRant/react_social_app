@@ -9,6 +9,7 @@ export default ({ muscles }) =>
     textColor="primary"
     centered
   >
+      <Tab label="All" />
     {muscles.map(group =>
       <Tab label={group} />  
     )}
