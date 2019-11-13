@@ -1,20 +1,15 @@
 import React from 'react';
-
-// function Header() {
-//   return (
-//     <div className="App-header">
-      
-//         <a href="#" className="nav_home">Home</a>
-//         <a href="#" className="nav_tel">Tel:</a>
-//         <a href="#" className="nav_contacts">Contacts</a>
-        
-//     </div>
-//   );
-// }
-
-// export default Header;
+// import AppBar from '@material-ui/core/AppBar';
+// import Toolbar from '@material-ui/core/Toolbar';
+import { AppBar, Toolbar, Typography  } from '@material-ui/core';
 
 export default props => 
   <div>
-    Header
+    <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" >
+            Excercise Database
+          </Typography>
+        </Toolbar>
+    </AppBar>
   </div>
